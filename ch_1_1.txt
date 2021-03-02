@@ -1,0 +1,71 @@
+챕터 목표 :
+data communications 정의와 이것이 가능한 구조와 동작 원리
+
+data encoding 의 종류
+
+analog data 와 digital data 의 차이
+
+analog transmission과 digital transmission 의 차이와 각각의 장단점
+parallel trasmission(병렬전송) 과 serial tranmission(직렬전송)의 차이와 활용 예
+asynchronous(비동기전송방식) 와 synchronous(동기전송방식) 의 차이점과 특징
+simplex(단이중), half-duplex(반이중), full-duplex(전이중) transmission의 정의
+
+data communications 표준, 표준 제정에 관여하는 기관, 표준 제정의 과정 설명
+
+OSI 7개 층, TCP/IP model을 data communications 의 예로 설명
+
+------------------------------------------------------------------------------------
+
+1.data communication의 정의
+
+-data를 A 지역에서 B 지역으로 이동
+
+-이 과정에서 최소 1개의 communications medium(전송 매체)이 필요함 (전화-주파수,인터넷-구리선,...)
+
+-data communication 이 가능하기 위해서는 전송 매체에 맞게 data가 fomatted 되야함
+
+->A와 B 사이에 정해진 구축된 형태로 formatted 된 data의 이동
+
+2. data encoding 의 종류
+
+-사람이 읽을 수 있는 data를 변환(data encoding)하기 위해서는 기계가 읽을 수 있는 형태로 formatted 되야 함(bits,bytes)
+
+-EBCDIC : Extended Binary Coded Decimal Interchange Code - 과거에 주로 사용되던 기법, 최근에는 중요도가 떨어짐
+
+-ASCII : American Standard Code for Informatioin Interchange - 영어 텍스트를 표현하는 기법 (1 byte)
+
+-Unicode : ASCII 의 단점(영어권 외에는 표현하기 어려움)을 보완하기 위한 기법 (2 byte 확장)
+
+3. analog data와 digital data 의 차이
+
+digital : 0과 1로 이루어짐 -> 감쇄나 왜곡된 data는 완벽히 복원이 가능함
+
+analog: 제한이 없음 -> 감쇄나 왜곡된 data는 완벽히 복원이 불가능함
+
+analog to analog -> 과거 analog 방식의 전화 통화
+
+digital to analog -> 과거 모뎀을 통한 컴퓨터 사용
+
+digital to digital -> 현재 인터넷 사용
+
+analog to digital -> 현재 digital 방식의 전화 통화
+
+3. parallel trasmission(병렬전송) 과 serial tranmission(직렬전송)의 차이와 활용 예
+
+parallel : data를 한번에 전송함(주로 프린터) -> 속도가 상대적으로 빠름
+
+serial: data를 차례대로 전송함 -> 속도가 상대적으로 느림, 현대에는 기술의 발전으로 속도 상승(USB)
+
+4.asynchronous(비동기전송방식) 와 synchronous(동기전송방식) 의 차이점과 특징
+
+asynchronous: 보내는 쪽이 준비가 되면 start bit와 stop bit를 정해 데이터를 전송
+
+synchronous: 보내는 쪽과 받는 쪽이 sync bits를 통해 준비가 되면 데이터를 전송
+
+5. simplex(단이중), half-duplex(반이중), full-duplex(전이중) transmission의 정의
+
+simplex: data가 한쪽 방향으로만 이동 	ex)pc의 data-> 모니터
+
+half-duplex: data가 한번에 한쪽 방향으로만 이동 ex)무전기
+
+full-duplex:data가 양방향으로 이동 (현대 대부분의 네트워크 방식)
