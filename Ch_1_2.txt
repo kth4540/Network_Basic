@@ -1,0 +1,108 @@
+## data communications 표준
+
+	표준은 데이터 통신과 네트워크에서 광범위하게 사용됨
+
+	표준은 상호 호환성, 운용성을 향상시킴(성능 향상, 가격 하락)
+
+	모스 코드, 벨 전화기가 표준의 대표적 예시
+
+## 표준 제정에 관여하는 기관, 표준 제정의 과정 설명
+
+	ANSI: 미국의 국내 표준을 제정하는 기구(ASCII가 ANSI가 제정한 대표적 표준 중 하나)
+
+	IEEE: 전 세계에서 가장 큰 엔지니어들의 단체(전기,전자), 특히 통신 분야에서 활발한 활동
+
+	ITU: 전기 통신의 국제 협력 활성화를 목적으로 설립된 기관
+
+	ISO: 표준을 제정하는 기관들의 대모격
+
+## data communication models
+
+	OSI model 과 TCP/IP model 이 있음
+
+	공통점 : 계층 구조(layered architectures)임
+
+	계층 구조:  PC로 예를 들면 |하드웨어->디바이스 드라이버->운영체제->어플리케이션| 의 층으로 이루어진 구조
+
+	이러한 구조는 공급업체가 제품을 향상시킬 때 호환성, 운용성을 높임
+
+## OSI model
+
+	OSI : 7계층, 각 계층과의 상호작용을 통해 네트워크 작업을 가능케 함(protocol)
+
+	1 <------------------------------------------------------------------------------> 7
+	physical - data link - newtwork - transport - session - presentation - application
+
+	데이터 수신시에는 물리->네트워크,발신시에는 반대방향으로 이동함
+
+## Layers of the OSI model
+
+	1.physical layer(물리 계층,L1): 디바이스의 물리적인 연결
+
+		신호를 아날로그로 , 디지털로 받을지, 동기 방식, 단/반/전이중 방식이 장비에 따라 결정됨
+
+		전송 속도가 정해져있어서 그 이상의 속도는 기술적으로 불가능함
+
+	2.data link layer(데이터 링크 계층)
+
+		물리 계층, 네트워크 계층과의 상호작용으로 데이터를 이동시킴
+
+		node address(MAC addrress=물리 주소,불변)를 정의함
+
+		데이터 비트가 어떻게 접근해야 하는지를 정의함
+
+		추가적으로 error detectio, correction 기능이 있음
+
+	3. network layer(네트워크 계층)
+
+		네트워크의 logical node address(IP 주소,유동) 을 정의함
+
+		패킷을 생성, 순서를 제어함
+
+		데이터가 이동하는 최적의 경로를 확보함
+
+	4. transport layer(전송 계층)
+
+		포트 번호를 이용해 서비스 주소를 구분함
+		(데이터를 한 컴퓨터에서 구동되는 여러 어플리케이션 중 어느 것에 전달하는지)
+
+	5. session layer(세션 계층)
+
+		네트워킹을 하는 두 디바이스 간의 연결을 설정, 유지, 동기화를 담당
+
+	6. presentation layer(표현 계층)
+
+		인코딩 관련 작업(ASCII,EBCDIC, Unicode)
+
+		필요한 경우 데이터에 대한 암호화 작업도 진행
+
+	7. application layer(어플리케이션 계층)
+
+		데이터를 송수신하기 위한 프로토콜들이 실행되는 계층(html, ftp, ...)
+
+##data encapsulation in a layered architecture
+
+	각 계층에서 데이터 전송뿐만 아니라 부가적인 기능도 실행되는데, 이 과정을 data encapsulation 이라고 함
+
+	컴퓨터에서 user data(웹사이트에서의 검색어 등) 를 부가정보로 하위 계층으로 전송
+	(A->B(A)->C(B(A))->D(C(B(A)))와 같은 방식)
+
+	수신된 쪽에서는 encapsulated 된 데이터를 계층마다 확인하면서 불필요한 정보를 제거 후 상위 계층으로 올려보냄
+	D(C(B(A)))->C(B(A))->B(A)->A와 같은 방식)
+
+##TCP/IP model
+
+	특정 네트워크에 적용하기 위해 개발한 기술이지만 수요가 많아 대세가 되어 표준과 동등한 위치(공식적 표준은 아님)
+
+	보통 4개의 계층, 일부는 5개 계층으로 소개함
+
+##layers of TCP/IP	model
+
+	network access layer - internet layer - host to internet layer - process/application layer
+	1 <-------------------------------------------------------------------------------------> 4
+
+## OSI model layers와 비교
+	OSI 1~2 =TCP/IP 1
+	OSI 3=TCP/IP 2 
+	OSI 4 = TCP/IP 3
+	OSI 5~7=TCP/IP 4
