@@ -1,0 +1,103 @@
+##Coaxial 케이블(동축 케이블)
+
+	두 개의 전기를 흘려보내는 conductor와 그것을 감싸는 보호막으로 구성
+
+	1개의 conductor는 데이터를 전기 신호로 이동, 나머지 하나는 주변으로부터 데이터를 보호
+
+	초창기 이더넷에서 많이 사용된 케이블
+
+##동축 케이블의 종류(Thicknet, Thinnet)
+
+	Thicknet
+		
+		지름이 1cm정도의 케이블
+
+		500m 범위 내 100대의 PC 연결이 가능한 케이블
+
+	Thinnet
+
+		Thicknet의 절반 정도의 두께
+
+		Thinnet의 무게와 두께, 비용 등을 보완하기 위해 1985년에 개발된 얇은 케이블
+
+		데이터 보호가 약해지고 연결 범위와 연결 가능한 PC 대수가 줄어듬(500->185, 100->30)
+
+		Thinnet을 이용해 네트워크를 구성할 때 필요한 BNC 커넥터가 있음
+
+##Twisted Pair Media(쌍꼬임선)
+
+	얇은 구리선을 꼬아놓은 형태 -> 잡음 보호에 강함
+
+	최근 LAN을 구성할 때 가장 흔하게 적용되는 케이블
+
+	케이블 내의 보호막 유무에 따라 UTP, STP로 나뉨
+
+##Twisted Pair Media 종류(UTP, STP)
+
+	UTP(Unshielded Twisted-Pair Cabling)	
+
+		Cat 1 UTP부터 Cat 6 UTP 까지 발전하면서 전송속도가 1 Mbps 이하에서 10 Gbps 까지 향상되었음
+
+		UTP Connectors - 8개의 핀으로 구성됨(RJ-45 커넥터)
+
+	STP(Shielded Twisted Pair)
+
+		금속성 재질의 보호막이 씌워져있음
+
+		 UTP보다 전자기적 방해(EMI,Electromagnetic Interference)로부터의 신호의 잡음이 덜함
+
+		STP Connectors - UTP Connector와 똑같이 생겼지만 EMI와 연결시켜주기 위해 뒷부분이 금속재질임
+
+##Fiber-Optic Media(광섬유 케이블)
+
+
+	동축케이블,쌍꼬임선과 다르게 케이블 내부가 유리나 플라스틱 재질로 되어있음(빛을 통과할 수 있는 재질)
+
+	데이터를 빛의 형태로 송수신
+
+	대용량의 데이터를 빠르게 전송하기 위한 목적으로 사용되었지만, 최근에는 가격이 많이 내려와 가정에서도 사용(FTTH)
+
+	장치에는 Female Connector가 장착되어있고, 두 디바이스 사이를 Male Connector가 연결함
+	
+	2개의 Fiber를 1개의 세트로 묶음(송신용, 수신용)
+
+	EMI의 방해로부터 자유로움
+
+	플라스틱이나 유리는 약하기 때문에 케이블의 관리가 어려움
+
+##Wireless Media(전기, 광학 conductor가 필요 없음, 대신 공기 중의 다양한 주파수를 이용 ,특별한 커넥터가 필요 없음)
+
+	Radio Frequency(라디오 주파수)
+
+		LAN을 구성할 때 transceiver(송수신이 가능한 장비)와 안테나가 필요함(수신 가능한 장비)
+
+		무선 LAN 주파수는 라디오 방송 주파수와는 겹치지 않음 (KCC에서 주파수 구분)
+
+		대표적으로 무선 공유기(Access Point)
+
+	Infrared(적외선 통신기법)
+
+		적은 양의 데이터를 짧은 거리에서 이동시킬 때 사용
+
+		잡음에 취약함
+
+	Microwave(고주파)
+
+		데이터를 멀리 보낼 수 있음(건물과 건물 사이)
+
+		데이터 수신 시 Parabolic antenna가 필요함
+
+##Network Interface Card(네트워크 어댑터, 네트워크 카드)
+
+	전송 매체와 통신 디바이스를 물리적으로 이어주는 역할(ex->PC에서 인터넷 포트가 탑재된 네트워크보드)
+
+	NIC는 송수신하는 데이터를 포맷에 맞게 바꿔 전송
+
+	물리적인 Node Address(Mac Address)를 제공함
+
+	NIC의 종류에 따라 통신 최대속도가 다름
+
+	아키텍쳐에 따라서 필요한 NIC가 다름(대부분은 이더넷)
+
+	최근에는 NIC에 부가적인 기능(원격 전원, 데이터 분석,관리 기능)을 제공해 경쟁력을 높임
+
