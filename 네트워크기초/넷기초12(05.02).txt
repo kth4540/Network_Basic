@@ -1,0 +1,17 @@
+ # Internet Protocols
+ * DHCP / DNS / iSCSI(스커지) / LDAP / HTTP
+
+ - iSCSI : SAN을 구축하는데 사용
+ * 모델레이어에 어떤 프로토콜이 있는지!
+
+ - File Transfer : HTTP 파일전송과 같은 것
+ - Remote Computing
+ - Streaming Media : 아프리카 TV, 짤방
+ - EMail
+ - Instant Message
+ 
+ * 인터넷의 미래 : 95년에 통신사업자들이 넘겨받은 후 민영화, 새로운 형태의 서비스제공
+ * Abilene Network : 네트워크에 문제가 있는지 없는지 확인해보는 것.
+		IT 산업이 발달된 도시들위주로 묶여있음.
+
+ * IPv4 -> IPv6 

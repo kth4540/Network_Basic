@@ -1,0 +1,47 @@
+ # 표준에 대해서 
+
+ - Guided Media(유선) : 선에 따라 흘러가는 형태
+ - Unguided Media(무선) : 선x, 무선 주파수
+
+ * 전기적인 신호의 형태
+ - Coaxial Cable : 구리선을 이용한 통신 ex) 케이블 티비선
+ - UTP(쌍꼬임선) : 구리선 이용한 통신 ex)이더넷 선, 전화선
+ * 빛의 신호형태(속도 매우빠름)
+ - Fiber Optic Cabling : 광섬유 케이블,유리(플라스틱)소재를 이용한 통신 ex)FTTH
+
+ * 무선통신(매체별 공기 중 주파수 대역)
+ - Terrestrial Microwave(지상파) : 정보받을 때 안테나 필요
+ - Satellite Microwave(위성파) : 한 쪽 면만에 정보전달하고 다른 쪽은 위성끼리 통신
+			  날씨에 영향을 많이 받음.
+ - Infrared(적외선 통신) : 10m이내 통신 ex)IRDA,bluetooth,Zicbee
+
+ 
+ * 표준 : 일반적으로 받아들여지는 모델이나 패턴. 데이터 통신이나 네트워크 분야에서
+	광대하게 사용되어짐.(강제 X)
+	- 다른 모델에서도 대체가 가능하다.
+	- 여러 계층에서 상호운용이 가능하다. => 가격이 낮아진다.(업체간 가격경쟁)
+ 
+ - ANSI : 국내표준기관(아스키코드 만듦), 미국이 먼저 만들어서 국제표준으로 바뀜.
+ - IEEE : 전기공학학회
+ - ITU : 통신업계주축의 통신기관
+ - ISO : 표준기관의 대모격.(네트워크 통신 표준 외 다른 표준까지도 제정)
+
+ * 데이터 통신 모델
+ - 계층구조==모듈화가 가능하다. 어느 한 부분만 알면 된다.
+ - OSI 모델 : 표준으로 정했었음. 7개의 계층(수행할 역할이 각각 다름)
+ *
+  7-Application layer : 애플리케이션 계층(HTTP)
+  6-Presentation layer : 표현계층.인코딩,암호화
+  5-Session layer : 세션계층.연결이 지속되는 공간을 유지하고 동기화하고 종료함
+  4-Transport layer : 전송계층.Port Number(누구에게 전달해 줄 것인지)
+  3-Network layer : 네트워크 계층.IP Address 논리주소(가변).
+  2-Data Link layer : 데이터링크계층.비트를 받아서 프레임으로 바꿔 전달(반대도 있음)
+		Mac Address 물리주소(고정).
+  1-Physhics layer : 물리계층.물리적인 연결&비트의 전송.디지털&아날로그 구분
+		동기&비동기 구분,방향성 구분
+ - TCP/IP : 표준이 아니었으나 표준화됨. 4~5개 계층이라고 설명됨.사람마다 다름.(All IP)
+ *
+  4-Process/Application layer
+  3-Host-to-Host layer
+  2-Internet layer
+  1-Network Access layer

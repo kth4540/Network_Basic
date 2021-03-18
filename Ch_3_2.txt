@@ -1,0 +1,81 @@
+##LAN architectures
+
+	LAN topology가 외형적 구성이라면 LAN architectures 는 내면적 구성
+
+	데이터를 어떻게 전송매체에 이동시키는지
+
+##Ethernet
+
+	1970년 초반에 개발, Alohanet이라는 네트워크에 적용하기 위한 Architecture로 개발
+
+	첫 Ethernet의 표준은 IEEE 802.3
+
+	현재 가장 널리 보급된 LAN
+
+	초기 Ethernet은 동축 케이블(10Base5)을 사용했고 이후 Thinnet(10Base2)로 교체됨
+
+	10Base-T=UTP케이블 사용하는 10Mbps Ethernet (A Base B->A는 속도, B는 케이블 종류)
+
+	802.3x에서 x에 숫자가 알파벳이 높을수록 최신 표준
+
+##CSMA/CD
+
+	CSMA/CD->널리 알려진 표준이고 구성이 쉬워 적용에 장점이 있지만, 디바이스가 늘어날수록 충돌 가능성이 높아짐
+
+	Ethernet에 연결시킬 디바이스 수를 적당히 제한해야함
+
+	CS(Carrier sense)
+
+		네트워크를 타고 이동중인 데이터가 있는지 확인
+
+	MA(Multiple access)
+
+		모든 디바이스가 네트워크에 접근할 동일한 권리를 가짐
+
+		먼저 접근하는 디바이스에 우선권 부여
+
+	CD(Collision detection)
+
+		두 데이터가 거의 동시에 도착하면 충돌할 수 있음
+
+		이 때 충돌이 감지되면 데이터 송신자는 랜덤한 시간 대기 후 데이터 재전송
+
+##Wireless
+
+	IEEE 802.11(Wi-Fi), Blueetooth, HomeRF 등이 있음, 이 중 HomeRF는 Bluetooth에 밀려 찾아보기 힘듬
+
+	CA(Collision avoidance) : 아예 충돌을 예방(DCF를 이용)
+
+	인접한 cell과 주파수 대역이 겹치면 문제가 생길 수 있음
+
+	Access point 위치를 잘 잡아야 넓은 범위를 확보할 수 있음
+
+	비용, Architecture 종류, 거리, 속도 등을 고려해야 함
+
+##Bluetooth
+
+	Polling mechanism을 사용함
+
+	Master Device와 Slave Device로 나뉘어져, Master 가 Slave들에게 일정 시간마다 전송될 데이터가 있는지 확인(Piconet)
+
+	Data Collision 이 생길 수 없음
+
+##FDDI
+
+	과거의 데이터 전송 기술, 아직도 사용되는 네트워크 환경이 현존함
+
+	유지 보수는 하고 있지만 새로 구축되는 네트워크 환경에는 Gigabit Ethernet이 적용됨
+
+	당시 고속 네트워크 환경, 학교 캠퍼스 네트워크 환경에 적용됨(Dual ring 구성)
+
+	
+
+##ATM
+
+	고속, 지연률이 낮은 데이터(음성,비디오)를 위한 네트워크를 구축하기 위해 개발
+
+	Network Backbone, wide area networks에 주로 적용된 기술
+
+	유지 보수는 하고 있지만 새로 구축되는 네트워크 환경에는 Gigabit Ethernet이 적용됨
+
+	

@@ -1,0 +1,37 @@
+ #MEDIA TYPES and CONNECTORS
+
+ * Coaxial Cable(유선)
+ - Thicknet : 신호보호재질의 막이 씌워져있음.이동거리가 길다(500미터)
+ - Thinnet : 잡음에 취약, 이동거리가 짧음.(200미터가 안됨),30대정도 연결가능
+	   거리가 먼 경우에는 증폭을 이용해 신호를 복원해줌.
+ - Shielded Twisted Pair : 전화선, UTP와 비슷하나 두 단계의 방어처리가 되어있음.
+ - Unshielded Twisted Pair : STP에 비해 방어처리가 없어 잡음에 약하지만 값이 싸다.
+ 
+ - Fiber-Optic Media : 신호를 전기적형태가 아닌 빛으로 보냄.많고 빠른 정보처리
+		    증폭장치를 자주 설치할 필요가 없음.
+
+ * Wireless Mdia
+ - Radio Frequency : LAN과 연결하여 엑세스 포인트를 받아옴.
+ - Wibro : 휴대 인터넷
+ - Infrared : 적외선 통신, 가벼운 주파수로 짧은 거리를 이동하기 위함.(블루투스,uwp)
+	   신호가 약해 간섭에 취약함.
+
+ V 유선전화 - 무선전화 - 무선전화
+ D 유선인터넷 - 무선인터넷 - 휴대인터넷
+
+ * hand-off / Roaming : 두 가지 모두 같은개념이지만 hand-off는 같은 회사간의 AP연결
+ * AP : 각 지역마다 셀구간을 나눠 통신이 되게 함.(hand-off이용으로 배터리가 빨리 닮음)
+
+ * NETWORK INTERFACE CARDS
+ - http://cafe.naver.com/eztcp/26
+
+ * LAN TOPOLOGIES
+ - 기본적인 맵이나 설계도를 의미, 물리적과 논리적(실제 데이타 이동) 토폴로지 존재
+ - Bus Topology : 구입이 쉽고 가격이 매우 싸다, 문제 발생 시 어디에 문제가 생겼는지
+	           파악이 쉽지 않다.
+ - Star Topology : 연결장치에 선을 꽂아 디바이스와 연결(모양이 별모양과 비슷함)
+	            허브 또는 스위치에 연결, 스위치는 어디에 연결하고 전달해야할지 인지
+	            연결장치하나로 쉽게 구현이 가능.
+ - Ring Topology : 링형태로 연결, 건물과 건물 사이 연결, 한 방향으로만 정보회전.
+	            시계방향, 반시계방향.하나가 문제가 생겨도 나머지는 정보회전가능
+ - Wireless Topology : AP와 셀을 이용한 연결, 속도가 느리고 보안에 취약(유선과 비교해서)
