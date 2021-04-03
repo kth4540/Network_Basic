@@ -1,0 +1,55 @@
+##Network Operating System
+
+	서로 연결되어있는 서버 하드웨어와 네트워크 간의 중재 인터페이스 역할의 소프트웨어
+
+	서버 컴퓨터에 탑재되어 구동, 클라이언트에 대한 접근 제어 담당
+
+	클라이언트에 탑재될 경우 서버에 요청한 결과를 받아 다시 서버로 넘겨주는 역할
+
+	NOS의 기능 : File system, Printing, Application, Web folder, Web-based Management,
+	Server clustering, Directory services, Advanced security services, Internet and Web
+
+	1980년 하드 드라이브의 가격이 개인 pc에 설치하긴 비싸 데이터 서버에 네트워크를 연결해서
+	자신의 데이터를 저장할 수 있게 환경을 조성한 것이 NOS 발전의 대표적 이유
+
+##Novell NetWare
+
+	1983년 설립됨
+
+	IPX라는 프로토콜을 사용해 상당히 많은 시장을 잠식함
+
+	이후 인터넷에 대한 대응이 미숙하여 시장에 외면받게됨
+
+	현재는 리눅스같은 오픈소스 기반 제품들로 연명중
+
+##Microsoft Windows
+
+	DOS(Disk Operating System)를 대체하는 운영체제
+
+	초창기에는 네트워크 서비스를 제공하지 않았지만 차후 IP기능 지원
+
+	인터넷을 사용할 수 있는 Microsoft Explorer를 제공
+
+	Microsoft가 제공하는 NOS는 초창기 매우 불안했지만 점점 발전
+
+##Linux
+
+	UNIX 기반의 오픈소스 운영체제
+
+	NetWare나 Windows에서 제공하는 대부분의 서비스를 제공
+
+	초기 웹 서버에 상당히 많이 사용됨(Microsoft의 초기 안정성 불안,사용료 무료)
+
+	UNIX 기반이기 때문에 사용하기 어려움
+
+	IBM,HP,Novell이 지지하는 운영체제
+
+##UNIX
+
+	MIT, GE,AT&T의 공동 작업으로 개발
+	
+	메인프레임 컴퓨터에서 사용하기 위해 개발
+
+	처음에는 무료였으나, 차후 유료화, 무료 버전은 BSD UNIX로 제공
+
+	워크스테이션급 컴퓨터에 사용하기 위한, SCO UNIX, Solaris, HP-UX, AIX도 출시됨

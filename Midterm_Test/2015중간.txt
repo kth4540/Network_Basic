@@ -1,0 +1,11 @@
+[Michail JungWon Shin] [오후 1:08] 작년 중간고사 서술형 문제는 
+
+[Michail JungWon Shin] [오후 1:08] 1. TCP/IP 중 맨 위 계층에 대한 프로토콜이 무엇이며 그 예를 서술하시오. 
+
+[Michail JungWon Shin] [오후 1:08] 2. LAN 아키텍쳐 4가지에 대해서 서술하시오 
+
+[Michail JungWon Shin] [오후 1:08] 3. HDCP의 약자가 무엇인가? 
+
+[Michail JungWon Shin] [오후 1:08] 4. Window와 Unix의 차이점을 설명하시오 
+
+[Michail JungWon Shin] [오후 1:08] 5. 패킷과 서킷네트워크의 차이를 서술하고, 서킷네트워크가 패킷네트워크에 비해서 가지는 장점을 서술하시오 
