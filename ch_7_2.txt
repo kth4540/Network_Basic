@@ -1,0 +1,67 @@
+##Digital Subsciber Line Technologies(DSL)
+
+	과거 전화선으로 인터넷과 통화를 선택해서 하던 한계를 극복
+
+	사용자는 DSL 모뎀을 추가,CO는 Digital Subscriber Line Access Multiplexer(DSLAM) 설치로
+	음성데이터와 패킷데이터를 구분해 서로 다른 네트워크를 이용해 처리
+
+##Very-High-Data-Rate DSL(VDSL)
+
+	DSL 기술의 속도를 끌어올린 방식
+
+	업로드:16Mbps, 다운로드:52Mbps에 근접 -> 업로드보다 다운로드에 더 많은 대역폭 설정
+	->체감상 더 빠른 속도
+
+	데이터 전송을 비대칭적으로 진행하는 것이 특징
+
+##Cable Television(CATV)
+
+	서비스 제공 사업자는 System Operator(SO)라 부름
+
+	많은 수의 채널을 가입자들에게 공급, 채널을 공급하는 사업자를 Program Provider(PP)
+
+	업로드보다 다운로드에 더 많은 대역폭 할당
+
+	가정에는 케이블 모뎀 설치, 사업자는 cable modem termination system(CMTS)를 headend에 구축해야함
+
+	방송장비가 구축된 공간을 Headend라 하고,
+	케이블 사업자들이 가지고 있는 망을 HFC(Hybrid Fiber-Coax)망->동축케이블과 광섬유케이블을 섞어 사용
+
+	CMTS는 패킷 데이터를 처리, 방송 관련 데이터들은 채널들을 통해 처리
+
+##Metropolitan Ethernet Networks(MENs)
+
+	이더넷 기반의 속도를 상당히 끌어올린 기술
+
+	100Mbps~10Gbps의 속도를 제공
+
+	The Metro Ethernet Forum에서 이와 관련된 표준 작업 진행
+
+##Passive Optical Network(PON)
+
+	광케이블을 이용한 일대다 형태의 연결로, 하나의 서비스 포인트에서 여러 가입자를 연결해 서비스 제공
+
+	Optical Splitter라는 장비를 사용해 신호를 여러 사용자들에게 전송
+
+	어떤 아키텍처 기반이냐에 따라 A(ATM)PONs, E(Ethernet)PONs로 나뉨
+
+##Wireless MAN/WAN services
+
+	WiMAX라고도 불림
+
+	우리나라만의 WiBro 서비스를 최초로 시작했지만, 현재는 서비스 종료
+
+	별도의 동글이 필요해서 4G를 두고 외면받게됨
+
+##MultiPlexing
+
+	여러 사용자로부터 발신된 신호를 목적지까지 이동시키기 위해 묶어서 이동
+
+	목적지에 가서 다시 개별 신호로 전달
+
+	신호를 묶어주는 장치가 Multiplexer
+
+	주파수를 기준으로 나누는 FDM, 시간으로 나누는 TDM 등이 있음
+
+	
+

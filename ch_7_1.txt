@@ -1,0 +1,58 @@
+##Circuit-Switched Carrier Services(Circuited-Switched Network)
+
+	통신을 원하는 A와 B 사이에 전용선을 연결하고, 유지되는동안 선을 독점함
+
+	회선을 점유한 시간에 비례해 요금을 청구(종량제)
+
+	기본적으로 음성 서비스(전화)를 제공하기 위해 구현된 네트워크였으나,
+	메인프레임급 컴퓨터가 등장하면서 데이터 서비스도 제공, 하지만 속도가 느려 주로 텍스트 전송
+
+	대표적으로 유선전화(PSTN [POTS라고도 부름] 사용, ISDN은 PSTN의 디지털 버전)
+
+	Dialog Modem을 사용하여 연결, 인터넷과 통화를 동시에 사용할 수 없었음
+
+##Integrated Services Digital Network(ISDN)
+
+	Circuited-Swithced Network의 디지털 버전
+
+	기존의 아날로그 전화회선들을 대체하기 위해 개발
+
+	아날로그에서 제공하는 서비스들을 대부분 지원, 많은 데이터를 빠르게 이동시킬 수 있음
+	->텍스트 뿐만 아니라 비디오,오디오 데이터들도 지연 없이 전송 가능
+
+##SONET(Synchronous optical Network)
+
+	ANSI에서 만든 표준 중 하나
+
+	고속으로 데이터를 이동시키기 위해 fiber-optic cable 사용
+
+	OC - x(숫자)로 레벨을 구현
+
+	안정성을 위해서 dual ring 형태로 서비스 구축
+
+	도시와 도시를 연결할 때 사용
+
+	Packet-Swithced Network의 발전으로 SONET의 장점이 묻힘
+
+##Packet-Swithced Carrier Service
+
+	Socket-Swithed Network의 단점을 극복하기 위해 개발
+
+	특정 회선을 독점하지 않음->회선을 확보하기 위한 시간이 필요가 없음,
+	대신 가능한 회선을 통해 이동, 라우터 등을 통해 데이터 이동 경로를 설정
+
+	데이터를 보낼 준비가 되어있으면 언제든지 데이터 전송 가능(Always on and ready to transmit)
+
+	특정 회선이 사용되지 않을 때 낭비되는 요소가 없어짐
+
+	도식화할 때 뭉게구름(Cloud)로 표현
+
+	Packet switched Network 방식으로 구축된 네트워크를 Public Data Network(PDN)이라고도 부름
+
+	데이터가 이동하기 전에 Packet Assembler/Disassembler(PAD)를 통과,
+	PAD는 데이터를 패킷으로 분할, 목적지에서 패킷을 데이터로 합치는 역할
+
+	회선을 골고루 사용하기 때문에 데이터가 몰리는 현상을 방지
+
+	X.25, Frame Relay, Asynchronous Transfer Mode 등의 기술등이 사용됐지만
+	최근에는 Ethernet 방식이 대부분 사용됨

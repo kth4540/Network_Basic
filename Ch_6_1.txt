@@ -1,0 +1,72 @@
+##Voice Network
+
+	사람의 목소리를 전기적인 신호로 바꿔서 이동시키는 역할
+
+	데이터를 이동시키기 위한 데이터 네트워크와는 별도로 구분지어서 존재했음
+	최근에는 그 경계가 허물어지고 있음
+	
+	voice network가 기존 아날로그 전송방식을 사용했다면 data network는 디지털 전송방식
+	최근에는 voice network도 digital 기술을 적용
+
+	1870~1950년대까진 아날로그 전송방식으로 전송,
+	1960~1970년대에는 메인프레임 컴퓨터의 데이터를 voice network를 통해서 전송
+
+voice network 초기에는 P2P(point-to-point->가입자끼리 직접 연결) 방식으로 연결
+	->가입자가 늘어나면서 P2P 방식 사용 불가
+
+telephone Central Office(CO)가 P2P의 대체방식으로 도입됨
+	->가입자는 CO에 회선 연결 후 전화 연결
+
+가정이나 사무실에서 CO까지 연결을 시켜주는 사업자를 LEC(Local exchange carrier)
+	->우리나라에서는 거의 쓰이지 않음
+	
+같은 CO끼리의 연결망을 Local Loop->구리선 2개를 꼬아놓은 형태로 되어있음(UTP와 유사)
+
+장거리 통신 기술을 접목한 voice network를 총칭해 plain old telephone system (POTS)
+	->public switched telephone network(PSTN)이라고도 불림
+	
+	->우리나라의 통신망도 POTS로 구축되어있음
+	
+	->같은 통신망 내에서 전화를 할 경우 CO의 교환기 스위치를 통해 연결,
+	둘 중 한명이 끊으면 스위치 off로 통화 종료
+	
+	->장거리 통신을 위한 POP(point of presence)가 있음
+	digital trunk를 통해 많은 양의 데이터 소화 
+
+##Point of Presence(POP)
+
+	POP 장비 소유자를 inter-exchange carrier( IXC 또는 IEC )->한국에서는 해당사항 X
+	->지역 서비스와 장거리 서비스가 구분되어 있을 때 생겨난 개념
+
+##Business purpose of Voice Networks
+	
+	A 지역에서 B 지역으로 음성 정보를 전달하기 위해 고안된 네트워크지만
+	최근에는 데이터의 이동도 가능하게끔 진화
+
+	POTS라는 네트워크를 구축해 서비스했지만 더 나은 서비스를 위해
+	ISDN(Integrated Service Digital Network )으로 진화하게 됨
+
+	PSTN의 부담을 줄여주기 위한 방편으로 PBX(Private Branched Exchange)
+
+	Cellular wireless 또한 데이터 전송을 위해 PSTN에 연동됨
+
+	Modem(Modulator + Demonulator) : POTS에서 산출되는 digital data를 이동시키기 위해 도입된 장비
+	->아날로그 신호를 디지털로,디지털 신호를 아날로그로 변환시켜줌
+
+##PBX
+
+	사용자와 통신사업자 모두 비용 절감, 최근에는 다양한 부가서비스(음성사서함 등) 제공
+
+	도입된 지 100년이 넘은 기술로, 초기에는 교환기를 수동으로 설치해 작업자가 상주함
+
+	PBX가 설치된 경우, 사내 전화를 할 경우 CO를 거치지 않아 통신요금을 지불하지 않음
+
+	초창기에는 고가였으나 최근에는 가격이 매우 하락하고 기능이 첨단화됨
+
+##VoIP
+
+	IP망을 통해서 음성 정보를 전달함(Data Network를 사용)
+
+	Voice Network보다 요금이 저렴함
+
+	전기가 차단되면 불능이 되는 단점이 있음
